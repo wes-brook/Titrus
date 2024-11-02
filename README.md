@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Titrus | Your Personalized Pomodoro Timer | React JS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a customizable Pomodoro timer I made that also lets you set a YouTube video as a background to build your own unique study environment. It dynamically fetches video titles using the YouTube API, displays them in the app, and includes a "Play/Pause" button to control the video background. 
 
-## Available Scripts
+**Try it out [here](https://wes-brook.github.io/Titrus/)!**
 
-In the project directory, you can run:
+## Table of Contents
+- [Features](#features)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Prerequisites](#Prerequisites)
+- [Configuration](#Configuration)
+- [Installation](#installation)
 
-### `npm start`
+## Features
+- **YouTube Background Video**: Plays a YouTube video as a background with a blurred overlay.
+- **Dynamic Title Fetching**: Uses the YouTube API to retrieve and display the title of the video.
+- **Play/Pause Button**: Easily toggle video play/pause by clicking anywhere on the web page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
+When using the website, you can use Titrus with the following features:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Start the Timer**: 
+   - Launch the app and click the "Start" button to begin your Pomodoro timer
+   - The timer will switch between work and break intervals as configured.
 
-### `npm test`
+2. **Play/Pause Video**: 
+   - Click anywhere on the web page to activate the "Play/Pause" to control the background video playback.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Timer Configuration**:
+   - To adjust work and break durations, update the `workDuration` and `breakDuration` values in the settings that appear above the timer.
 
-### `npm run build`
+4. **End of Interval**:
+   - The timer will automatically switch to a break interval at the end of each work period.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Feel free to customize the video background & timer settings display to fit your ideal productivity setup.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
+- **React**: Frontend framework for building user interfaces.
+- **JavaScript (ES6)**: Primary language for application logic.
+- **CSS**: Styling for the background, title, and visualizer.
+- **YouTube IFrame API**: For embedding and controlling the YouTube video.
+- **YouTube Data API v3**: To fetch video titles.
+- **HTML**: Structure for the app.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Prerequisites
+For if you want to develop this project on your device.
 
-### `npm run eject`
+- **Node.js**: Make sure you have Node.js (version 14 or higher) installed. [Download Node.js](https://nodejs.org/)
+- **YouTube Data API Key**: Required for fetching video titles. Follow the steps in [Configuration](#configuration) to set it up.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Configuration
+For if you want to develop this project on your device.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Obtain a YouTube Data API Key from [Google Cloud Console](https://console.cloud.google.com/).
+2. Replace `YOUR_API_KEY` in `src/components/YouTubeBackground.js`:
+   ```javascript
+   const API_KEY = "YOUR_API_KEY";
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation
+For if you want to develop this project on your device.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
