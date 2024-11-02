@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Titrus/static/css/main.1a112c19.css",
+    "main.js": "/Titrus/static/js/main.5e5fd519.js",
+    "static/js/453.26b8a252.chunk.js": "/Titrus/static/js/453.26b8a252.chunk.js",
+    "static/media/game-start-6104.mp3": "/Titrus/static/media/game-start-6104.31f371aa54d6099a48e0.mp3",
+    "index.html": "/Titrus/index.html",
+    "main.1a112c19.css.map": "/Titrus/static/css/main.1a112c19.css.map",
+    "main.5e5fd519.js.map": "/Titrus/static/js/main.5e5fd519.js.map",
+    "453.26b8a252.chunk.js.map": "/Titrus/static/js/453.26b8a252.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a112c19.css",
+    "static/js/main.5e5fd519.js"
+  ]
+}
