@@ -1,0 +1,78 @@
+/* Settings.css */
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.chat-bubble {
+  padding: 12px 16px;
+  border-radius: 18px;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0.05; /* Initially hidden */
+  transform: translateY(-10px); /* Start slightly above */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.chat-bubble.received {
+  align-self: flex-start;
+  background-color: #e5e5ea;
+  border-radius: 18px 18px 18px 4px;
+  color: #000;
+}
+
+.chat-bubble.sent {
+  align-self: flex-end;
+  background-color: #007aff;
+  border-radius: 18px 18px 4px 18px;
+  color: #fff;
+}
+
+.chat-bubble:hover {
+  opacity: 1; /* Fully visible on hover */
+  transform: translateY(0); /* Move to original position */
+}
+
+.settings-label {
+  font-size: 0.85rem;
+  color: inherit; /* Inherit color based on bubble type */
+}
+
+.chat-input {
+  width: 93%;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.chat-input:focus {
+  background-color: rgba(255, 255, 255, 0.7); /* Subtle background change on focus */
+}
+
+
+.settings-wrapper .settings{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  opacity: 0;
+  transition: opacity 1.0s;
+  /* Initially hide settings */
+}
+
+.settings-wrapper.show .settings {
+  opacity: 1;            /* Fully visible on hover */
+}
+
